@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  firstProj
+//  test_project
 //
-//  Created by Deny Vorko on 01.07.2022.
+//  Created by Deny Vorko on 06.07.2022.
 //
 
 import UIKit

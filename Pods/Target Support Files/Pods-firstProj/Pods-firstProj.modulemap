@@ -1,6 +1,0 @@
-framework module Pods_firstProj {
-  umbrella header "Pods-firstProj-umbrella.h"
-
-  export *
-  module * { export * }
-}

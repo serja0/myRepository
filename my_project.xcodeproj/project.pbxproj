@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BAB1DA1DF18E16C7454F818C /* Pods_my_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB1544621B6C4D16D859A26 /* Pods_my_project.framework */; };
 		ECAD25A42877029900A047EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD25A32877029900A047EA /* AppDelegate.swift */; };
-		ECAD25A62877029900A047EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD25A52877029900A047EA /* SceneDelegate.swift */; };
 		ECAD25A82877029900A047EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD25A72877029900A047EA /* ViewController.swift */; };
 		ECAD25AB2877029900A047EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAD25A92877029900A047EA /* Main.storyboard */; };
 		ECAD25AD2877029D00A047EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAD25AC2877029D00A047EA /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 		BFB1544621B6C4D16D859A26 /* Pods_my_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAD25A02877029900A047EA /* my_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAD25A32877029900A047EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECAD25A52877029900A047EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ECAD25A72877029900A047EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECAD25AA2877029900A047EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECAD25AC2877029D00A047EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +46,6 @@
 				102FE056DEEFD2AEAAB40889 /* Pods-my_project.debug.xcconfig */,
 				3E840B47834B309ED09C984A /* Pods-my_project.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -64,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				ECAD25A32877029900A047EA /* AppDelegate.swift */,
-				ECAD25A52877029900A047EA /* SceneDelegate.swift */,
 				ECAD25A72877029900A047EA /* ViewController.swift */,
 				ECAD25A92877029900A047EA /* Main.storyboard */,
 				ECAD25AC2877029D00A047EA /* Assets.xcassets */,
@@ -201,7 +197,6 @@
 			files = (
 				ECAD25A82877029900A047EA /* ViewController.swift in Sources */,
 				ECAD25A42877029900A047EA /* AppDelegate.swift in Sources */,
-				ECAD25A62877029900A047EA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

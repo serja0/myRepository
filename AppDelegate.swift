@@ -14,15 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-       //let vc = ViewController()
-        //vc.view.backgroundColor = .cyan
+       let vc = ViewController()
+        vc.view.backgroundColor = .cyan
         
-        let tbVC = UITabBarController()
-        tbVC.view.backgroundColor = .gray
+//        let tbVC = UITabBarController()
+//        tbVC.view.backgroundColor = .gray
+       // let appTabBar = AppTabBarController()
         let frame = UIScreen.main.bounds
         self.window = UIWindow(frame: frame)
-        self.window?.rootViewController = tbVC
+        self.window?.rootViewController = AppTabBarController()
         window?.makeKeyAndVisible()
+        
         
         return true
     }

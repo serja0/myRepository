@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  my_project
+//  weather_app
 //
-//  Created by Deny Vorko on 07.07.2022.
+//  Created by Deny Vorko on 21.07.2022.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .green
+        // Do any additional setup after loading the view.
     }
 
 

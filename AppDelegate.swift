@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-       let vc = ViewController()
-        vc.view.backgroundColor = .cyan
+      // let vc = ViewController()
+       // vc.view.backgroundColor = .cyan
         
 //        let tbVC = UITabBarController()
 //        tbVC.view.backgroundColor = .gray

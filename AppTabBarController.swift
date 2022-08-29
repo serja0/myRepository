@@ -20,7 +20,7 @@ class AppTabBarController: UITabBarController, UITabBarControllerDelegate {
         let vc = ViewController()
         let icon1 = UITabBarItem(title: "Oleg", image: nil, selectedImage: nil)
         vc.tabBarItem = icon1
-        vc.view.backgroundColor = .lightGray
+       // vc.view.backgroundColor = .lightGray
         
         self.viewControllers = [vc]
     }

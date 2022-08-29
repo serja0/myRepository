@@ -39,6 +39,8 @@ class LaunchViewController : UIViewController {
         self.startButton.setTitle("GO", for: .normal)
         // переход на другой контроллер по нажатию/экшн
         self.startButton.addTarget(self, action: #selector(goToMainViewController(sender:)), for: .touchUpInside)
+        startButton.layer.borderWidth = 2
+        startButton.layer.borderColor = UIColor.yellow.cgColor
         }
     
     @objc private func goToMainViewController(sender: AnyObject) {

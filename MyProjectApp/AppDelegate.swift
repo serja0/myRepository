@@ -16,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
       // let vc = ViewController()
        // vc.view.backgroundColor = .cyan
-        vmknfmnkk
-        
 //        let tbVC = UITabBarController()
 //        tbVC.view.backgroundColor = .gray
        // let appTabBar = AppTabBarController()

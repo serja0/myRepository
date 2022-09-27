@@ -11,20 +11,20 @@ import UIKit
 struct HourlyWeatherInfo {
     
     let time: String
-    let image: UIImage
-    let temp: String
+    let imageName: String
+    let temp: Int
     
-    static func someInfo() -> [HourlyWeatherInfo]{
-        return [
-            HourlyWeatherInfo.init(time: "Now", image: UIImage(named: "sunny")!, temp: "12°"),
-            HourlyWeatherInfo.init(time: "Now", image: UIImage(named: "sunny")!, temp: "12°"),
-            HourlyWeatherInfo.init(time: "Now", image: UIImage(named: "sunny")!, temp: "12°"),
-            HourlyWeatherInfo.init(time: "Now", image: UIImage(named: "sunny")!, temp: "12°"),
-            HourlyWeatherInfo.init(time: "Now", image: UIImage(named: "sunny")!, temp: "12°"),
-            HourlyWeatherInfo.init(time: "Now", image: UIImage(named: "sunny")!, temp: "12°"),
-            HourlyWeatherInfo.init(time: "Now", image: UIImage(named: "sunny")!, temp: "12°"),
-            HourlyWeatherInfo.init(time: "Now", image: UIImage(named: "sunny")!, temp: "12°")
+    static let mock: [HourlyWeatherInfo] = [
+        
+            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12)
 
             ]
-    }
+    
 }

@@ -41,12 +41,10 @@ class MainViewController: UIViewController {
         
         view.addSubview(hourlyContainerView)
         hourlyContainerView.snp.makeConstraints{
-            $0.top.equalTo(header.snp.bottom).offset(55)
+            $0.top.equalTo(header.snp.bottom).offset(15)
             $0.leading.trailing.equalToSuperview().inset(35)
             $0.height.equalTo(100)
         }
-        hourlyContainerView.backgroundColor = .green
-        
     }
     
     

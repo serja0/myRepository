@@ -9,67 +9,69 @@ import Foundation
 import UIKit
 // второй экран
 class MainViewController: UIViewController {
-    // разделяет вью на равные части/в ней три вью у нас
-    private lazy var stackView = UIStackView()
-    // вьюхи определяем
-    // контейнер
-    private lazy var imageContainer = UIView()
-    // вьюхи/ облако - 14 - "So, it's Windy."
-    private lazy var mainImageView = UIImageView()
-    private lazy var mainTitleView = UILabel()
-    private lazy var descriptionLabel = UILabel()
     
+    private let header = HeaderView()
+    private let hourlyView = HourlyContainerView()
+    //контейнер з тейблвью
+    private let weeklyView = WeeklyContainerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
     }
-    // вся логика тут
+    
+    // вся логика тут(тільки отрисовка и констрейнты)
     private func setupViews() {
         // главная вью
-        self.view.backgroundColor = .white
-        // в главную вью стеквью
-        self.view.addSubview(stackView)
-        // констрейнты стеквью по отношению главной вью
-        stackView.snp.makeConstraints { make in
-            make.left.right.equalToSuperview()
-            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
-            make.height.equalTo(UIScreen.main.bounds.height * 2/3)
+        view.backgroundColor = .appBackground
+        
+        view.addSubview(header)
+        header.snp.makeConstraints{
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(20)
+            $0.height.equalTo(250)
         }
-        // вертикальное расположение стеквью
-        stackView.axis = .vertical
-        // контейнер поверх стеквью или в контейнер стеквью
-        stackView.addArrangedSubview(imageContainer)
-        // в контейнер облако
-        imageContainer.addSubview(mainImageView)
-        // облаку констрейнты
-        mainImageView.snp.makeConstraints { make in
-            make.center.equalToSuperview()
-            make.height.width.equalTo(150)
+        
+        view.addSubview(weeklyView)
+        weeklyView.snp.makeConstraints{
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(400)
+            $0.height.equalTo(260)
         }
-        // в стеквью 14
-        stackView.addArrangedSubview(mainTitleView)
-        // в стеквью "So, it's Windy."
-        stackView.addArrangedSubview(descriptionLabel)
-        stackView.spacing = 40
-        // какая картинка будет у облака
-        mainImageView.image = UIImage(named: "cloud")
-        // расположение картинки
-        mainImageView.contentMode = .scaleAspectFit
-        // 14 шрифт - позицию - текст
-        mainTitleView.font = .systemFont(ofSize: 100)
-        mainTitleView.font = .boldSystemFont(ofSize: 90)
-        mainTitleView.textAlignment = .center
-        mainTitleView.text = "14"
-        // тексту шрифт - позицию - текст
-        descriptionLabel.font = .systemFont(ofSize: 32)
-        descriptionLabel.textAlignment = .center
-        descriptionLabel.text = "So, it's Windy."
-        // отступ от навигейшнКонстроллера облака
-        stackView.layoutMargins = UIEdgeInsets(top: 70, left: 0, bottom: 70, right: 0)
-        stackView.isLayoutMarginsRelativeArrangement = true
-        stackView.backgroundColor = .lightGray
+        
+        view.addSubview(hourlyView)
+        hourlyView.snp.makeConstraints{
+            $0.centerX.equalToSuperview()
+            $0.centerY.equalToSuperview()
+            $0.height.equalTo(100)
+            $0.width.equalTo(400)
+
+        }
+        hourlyView.backgroundColor = .green
+        
     }
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         print("willAppear Main")

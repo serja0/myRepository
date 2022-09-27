@@ -6,7 +6,7 @@
 //
 
 import UIKit
-// аттрибут класса AppDelegate
+// аттрибут класса AppDelegate/основна точка входу для нашого додатку
 @main
 //делегат приложения
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -22,7 +22,7 @@ class LaunchViewController : UIViewController {
     }
     
     // операции с кнопкой
-    private func setupViews () {
+   private func setupViews () {
         // кнопку на экран
         self.view.addSubview(startButton)
         // констрейнты кнопке с помощью Snapkit
@@ -31,7 +31,6 @@ class LaunchViewController : UIViewController {
             make.height.equalTo(50)
             make.width.equalTo(200)
         }
-        
         // цвет кнопке шоб увидеть ее/иначе не видно/и радиус
         self.startButton.backgroundColor = .black
         self.startButton.layer.cornerRadius = 20
@@ -49,6 +48,11 @@ class LaunchViewController : UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
+    
+    
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         print("willAppear")
     }

@@ -11,7 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     private let header = HeaderView()
-    private let hourlyView = HourlyContainerView()
+    private let hourlyContainerView = HourlyContainerView()
     //контейнер з тейблвью
     private let weeklyView = WeeklyContainerView()
     
@@ -39,15 +39,13 @@ class MainViewController: UIViewController {
             $0.height.equalTo(260)
         }
         
-        view.addSubview(hourlyView)
-        hourlyView.snp.makeConstraints{
-            $0.centerX.equalToSuperview()
-            $0.centerY.equalToSuperview()
+        view.addSubview(hourlyContainerView)
+        hourlyContainerView.snp.makeConstraints{
+            $0.top.equalTo(header.snp.bottom).offset(55)
+            $0.leading.trailing.equalToSuperview().inset(35)
             $0.height.equalTo(100)
-            $0.width.equalTo(400)
-
         }
-        hourlyView.backgroundColor = .green
+        hourlyContainerView.backgroundColor = .green
         
     }
     

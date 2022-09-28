@@ -181,13 +181,14 @@
 		ECD84306288956B90083AACE /* weather_app */ = {
 			isa = PBXGroup;
 			children = (
+				ECD84307288956B90083AACE /* AppDelegate.swift */,
+				ECD8431E288971FC0083AACE /* MainViewController.swift */,
+				ECD8431B2889671F0083AACE /* Screens.swift */,
 				EC13D37428E3ABB500F2E92D /* API */,
 				EC36640528D8D6D8005B6D67 /* Models */,
 				EC01E5C328BD5FF600486D8D /* Extensions */,
 				ECD84320288977E40083AACE /* Launch */,
 				ECD8431D288971900083AACE /* Main */,
-				ECD84307288956B90083AACE /* AppDelegate.swift */,
-				ECD8431B2889671F0083AACE /* Screens.swift */,
 				ECD84310288956C00083AACE /* Assets.xcassets */,
 				ECD84312288956C00083AACE /* LaunchScreen.storyboard */,
 				ECD84315288956C00083AACE /* Info.plist */,
@@ -202,7 +203,6 @@
 				EC36641B28E35F97005B6D67 /* HourlyContainerView */,
 				EC36640828D8DC7C005B6D67 /* HourlyInfoView */,
 				EC36640928D8DCB0005B6D67 /* WeekInfoView */,
-				ECD8431E288971FC0083AACE /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";

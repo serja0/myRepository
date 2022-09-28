@@ -17,13 +17,13 @@ struct HourlyWeatherInfo {
     static let mock: [HourlyWeatherInfo] = [
         
             HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
-            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
-            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
-            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
-            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
-            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
-            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12),
-            HourlyWeatherInfo(time: "Now", imageName: "sunny", temp: 12)
+            HourlyWeatherInfo(time: "2 pm", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "3 pm", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "4 pm", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "5 pm", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "6 pm", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "7 pm", imageName: "sunny", temp: 12),
+            HourlyWeatherInfo(time: "8 pm", imageName: "sunny", temp: 12)
 
             ]
     
